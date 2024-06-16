@@ -1,0 +1,185 @@
+Visual Studio Code (VS Code) offers a plethora of shortcuts to streamline your coding experience and increase productivity on Windows. Below is a comprehensive list of some of the most useful shortcuts, categorized by function.
+
+### General Shortcuts
+
+- **Open Command Palette**: `Ctrl + Shift + P` or `F1`
+  - Access various commands quickly.
+
+- **Open File**: `Ctrl + P`
+  - Quickly open a file by name.
+
+- **Save File**: `Ctrl + S`
+  - Save the current file.
+
+- **Save All**: `Ctrl + K, S`
+  - Save all open files.
+
+- **Close File**: `Ctrl + W`
+  - Close the current file.
+
+- **Close All Files**: `Ctrl + K, Ctrl + W`
+  - Close all open files.
+
+- **Split Editor**: `Ctrl + \`
+  - Split the editor into multiple windows.
+
+- **Navigate Between Editors**: `Ctrl + 1/2/3`
+  - Switch between open editor windows.
+
+- **Toggle Sidebar**: `Ctrl + B`
+  - Show or hide the sidebar.
+
+- **Quick Open Recent Files**: `Ctrl + R`
+  - Open recently used files.
+
+### Editing Shortcuts
+
+- **Copy Line Down**: `Alt + Shift + Down`
+  - Duplicate the current line or selected block.
+
+- **Copy Line Up**: `Alt + Shift + Up`
+  - Duplicate the current line or selected block above.
+
+- **Move Line Down**: `Alt + Down`
+  - Move the current line or selected block down.
+
+- **Move Line Up**: `Alt + Up`
+  - Move the current line or selected block up.
+
+- **Delete Line**: `Ctrl + Shift + K`
+  - Delete the current line.
+
+- **Comment Line**: `Ctrl + /`
+  - Comment or uncomment the current line.
+
+- **Toggle Block Comment**: `Shift + Alt + A`
+  - Add or remove block comments.
+
+- **Select All Occurrences of Word**: `Ctrl + Shift + L`
+  - Select all occurrences of the current word.
+
+- **Expand Selection**: `Shift + Alt + Right`
+  - Expand the selection by one semantic unit.
+
+- **Shrink Selection**: `Shift + Alt + Left`
+  - Shrink the selection by one semantic unit.
+
+- **Find and Replace**: `Ctrl + H`
+  - Open the find and replace panel.
+
+### Navigation Shortcuts
+
+- **Go to Definition**: `F12`
+  - Jump to the definition of a symbol.
+
+- **Peek Definition**: `Alt + F12`
+  - Peek at the definition of a symbol without navigating away.
+
+- **Go to Implementation**: `Ctrl + F12`
+  - Jump to the implementation of a symbol.
+
+- **Find in Files**: `Ctrl + Shift + F`
+  - Search for text across all files.
+
+- **Quick File Navigation**: `Ctrl + Tab`
+  - Switch between open files.
+
+- **Navigate to Matching Bracket**: `Ctrl + Shift + \`
+  - Jump to the matching bracket of the current one.
+
+- **Fold (Collapse) Region**: `Ctrl + Shift + [`
+  - Collapse the current code block.
+
+- **Unfold (Expand) Region**: `Ctrl + Shift + ]`
+  - Expand the current code block.
+
+- **Jump to Line**: `Ctrl + G`
+  - Go to a specific line number.
+
+### Multi-Cursor Shortcuts
+
+- **Add Cursor Below**: `Ctrl + Alt + Down`
+  - Add a new cursor below the current line.
+
+- **Add Cursor Above**: `Ctrl + Alt + Up`
+  - Add a new cursor above the current line.
+
+- **Select Next Match**: `Ctrl + D`
+  - Select the next occurrence of the current selection.
+
+- **Select All Matches**: `Ctrl + Shift + L`
+  - Select all matches of the current selection.
+
+- **Column Selection Mode**: `Shift + Alt + Click`
+  - Create multiple cursors by clicking.
+
+### Debugging Shortcuts
+
+- **Toggle Breakpoint**: `F9`
+  - Add or remove a breakpoint.
+
+- **Start Debugging**: `F5`
+  - Start or continue debugging.
+
+- **Step Over**: `F10`
+  - Step over the current line.
+
+- **Step Into**: `F11`
+  - Step into the current function.
+
+- **Step Out**: `Shift + F11`
+  - Step out of the current function.
+
+- **Stop Debugging**: `Shift + F5`
+  - Stop the debugging session.
+
+### Integrated Terminal Shortcuts
+
+- **Toggle Integrated Terminal**: `Ctrl + ` (backtick)
+  - Show or hide the integrated terminal.
+
+- **Create New Terminal**: `Ctrl + Shift + ` (backtick)
+  - Open a new terminal window.
+
+- **Scroll Line Up**: `Ctrl + Up`
+  - Scroll the terminal up one line.
+
+- **Scroll Line Down**: `Ctrl + Down`
+  - Scroll the terminal down one line.
+
+- **Kill Terminal**: `Ctrl + Shift + C`
+  - Close the current terminal.
+
+### Extension Shortcuts
+
+- **Show Extensions**: `Ctrl + Shift + X`
+  - Open the Extensions view.
+
+- **Install Extension**: `Ctrl + P`, then type `ext install <extension-name>`
+  - Quickly install an extension using the command palette.
+
+### Miscellaneous Shortcuts
+
+- **Toggle Word Wrap**: `Alt + Z`
+  - Enable or disable word wrap for long lines.
+
+- **Zoom In**: `Ctrl + =`
+  - Increase the text size.
+
+- **Zoom Out**: `Ctrl + -`
+  - Decrease the text size.
+
+- **Toggle Full Screen**: `F11`
+  - Switch between full screen and windowed mode.
+
+- **Toggle Zen Mode**: `Ctrl + K Z`
+  - Enter or exit Zen mode for a distraction-free environment.
+
+- **Open Settings**: `Ctrl + ,`
+  - Open the settings editor.
+
+- **Open Keyboard Shortcuts**: `Ctrl + K Ctrl + S`
+  - Open the keyboard shortcuts editor.
+
+### Summary
+These shortcuts can greatly enhance your coding efficiency in VS Code by allowing you to navigate, edit, and manage your code quickly and effortlessly. Customizing and mastering these shortcuts will help you create a more seamless and productive coding workflow.

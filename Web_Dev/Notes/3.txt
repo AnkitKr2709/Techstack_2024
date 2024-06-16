@@ -1,0 +1,64 @@
+Basic Structure of an HTML Website
+HTML Document Structure:
+
+Every HTML document starts with a <!DOCTYPE html> declaration, which tells the browser that the document is an HTML5 document.
+The document is enclosed within <html> tags, divided into two main sections: <head> and <body>.
+Essential Tags and Elements:
+
+<html>: The root element of the document.
+<head>: Contains meta-information about the document such as title, character set, and links to stylesheets.
+<body>: Contains the content that is visible to the user.
+
+-----------------------------------------------------------------
+
+Breakdown of the HTML Structure
+
+1. <!DOCTYPE html>
+Declares the document type and version. For HTML5, use <!DOCTYPE html>.
+
+2. <html lang="en">
+The root element of the HTML document.
+The lang attribute specifies the language of the document (English in this case).
+
+3. <head>
+Contains metadata about the HTML document.
+Common elements within <head> include:
+<meta charset="UTF-8">: Defines the character set.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Ensures the website is responsive and scales properly on different devices.
+<title>: Sets the title of the webpage displayed on the browser tab.
+<link rel="stylesheet" href="styles.css">: Links to an external CSS stylesheet.
+
+4. <body>
+Contains all the visible content of the webpage.
+Common elements within <body> include:
+<header>: Defines a header for the document, typically containing navigation links and headings.
+<nav>: Contains navigation links.
+<main>: Contains the main content of the page.
+<section>: Represents a standalone section of content.
+<footer>: Defines a footer for the document, typically containing copyright and contact information.
+---------------------------------------------------------
+
+Adding More Elements
+
+Links (<a>)
+Used to create hyperlinks.
+Example: <a href="https://example.com">Visit Example</a>
+
+
+Images (<img>)
+Embeds images in the webpage.
+Example: <img src="image.jpg" alt="Description of image">
+
+
+Lists (<ul> and <ol>)
+<ul>: Unordered list.
+<ol>: Ordered list.
+List items are wrapped in <li> tags.
+
+Example:
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+
+---------------------------------------------------------------

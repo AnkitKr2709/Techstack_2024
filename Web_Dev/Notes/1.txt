@@ -1,0 +1,26 @@
+short and simple explanation of client, server, and browser:
+
+### Client
+- **Role**: User's device that requests and interacts with web content.
+- **Examples**: Computers, smartphones, tablets.
+- **Function**: Sends requests to servers, displays web pages via browsers.
+
+### Server
+- **Role**: Powerful computer providing resources and services.
+- **Examples**: Web servers, database servers.
+- **Function**: Responds to client requests, serves data and web content.
+
+### Browser
+- **Role**: Software for accessing and viewing web pages.
+- **Examples**: Chrome, Firefox, Safari.
+- **Function**: Sends requests to servers, displays content, executes scripts.
+
+### How They Work Together
+1. **Client uses a browser** to request a web page.
+2. **Server processes** the request and sends the page back.
+3. **Browser displays** the page and allows user interaction.
+
+### Key Points
+- **Client**: Initiates communication.
+- **Server**: Responds and provides content.
+- **Browser**: Displays content and handles interactions.
