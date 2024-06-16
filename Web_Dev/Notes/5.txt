@@ -1,0 +1,137 @@
+Short Notes on Including Images in HTML
+
+Basic <img> Tag Syntax:
+
+<img>: Used to embed images in HTML.
+Attributes:
+src: Path to the image file.
+alt: Alternative text for accessibility and SEO.
+width and height: Image dimensions.
+
+--------------------------------------------------------
+Ex:
+<img src="image.jpg" alt="Description of image" width="600" height="400">
+
+----------------------------------------------------------
+
+HTML Tables: Short Notes and Example
+
+HTML tables are used to organize and display data in a tabular format, with rows and columns. Here’s a concise guide on creating and styling tables in HTML.
+
+Basic Elements of an HTML Table
+<table>: Defines the table.
+<tr>: Defines a table row.
+<td>: Defines a table cell.
+<th>: Defines a table header cell, typically used in the first row or column.
+
+Basic Structure of an HTML Table
+
+<table>
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+    </tr>
+    <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+    </tr>
+    <tr>
+        <td>Data 4</td>
+        <td>Data 5</td>
+        <td>Data 6</td>
+    </tr>
+</table>
+
+
+
+Colspan and Rowspan
+colspan: Extends a cell across multiple columns.
+rowspan: Extends a cell across multiple rows.
+
+<table border="1">
+    <tr>
+        <th colspan="2">Header 1 and 2</th>
+        <th>Header 3</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Data spanning 2 rows</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+    </tr>
+    <tr>
+        <td>Data 4</td>
+        <td>Data 5</td>
+    </tr>
+</table>
+
+-------------------------------------------------------------------
+
+LIST 
+
+Types of HTML Lists
+
+Ordered List (<ol>)
+Unordered List (<ul>)
+Description List (<dl>)
+
+Each type has different attributes and use cases.
+
+1. Ordered List (<ol>)
+Description: Presents items in a numbered sequence.
+Usage: Use when the order of items matters, such as steps in a process.
+
+Basic Syntax:
+<ol type="I">
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ol>
+
+List Types (type attribute)
+
+type="1": Default numbering (1, 2, 3).
+type="A": Uppercase letters (A, B, C).
+type="a": Lowercase letters (a, b, c).
+type="I": Uppercase Roman numerals (I, II, III).
+type="i": Lowercase Roman numerals (i, ii, iii).
+
+=====================
+
+2. Unordered List (<ul>)
+Description: Presents items without a specific order, typically with bullets.
+Usage: Use for lists where the order of items is not important, such as features or ingredients.
+Basic Syntax:
+
+<ul style="list-style-type: square;">
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ul>
+
+
+List Styles (style attribute)
+
+style="list-style-type: disc;": Default bullet (•).
+style="list-style-type: circle;": Hollow circles (◦).
+style="list-style-type: square;": Squares (▪).
+style="list-style-type: none;": No bullets.
+
+====================
+
+3. Description List (<dl>)
+
+Description: Presents items with a description or definition.
+Usage: Use for terms and definitions, FAQ sections, or name-value pairs.
+Basic Syntax
+
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language.</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets.</dd>
+    <dt>JavaScript</dt>
+    <dd>A programming language for web development.</dd>
+</dl>
+

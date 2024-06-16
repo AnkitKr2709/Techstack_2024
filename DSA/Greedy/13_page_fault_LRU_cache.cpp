@@ -2,6 +2,8 @@
 // second line given array of n tasks
 // capacity is given as C
 // need to find the total page faults
+//TC: O(N*C)
+//SC: O(C)
 
 #include<bits/stdc++.h>
 using namespace std;
