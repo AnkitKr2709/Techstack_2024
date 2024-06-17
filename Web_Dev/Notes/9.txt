@@ -1,0 +1,54 @@
+
+
+### HTML
+
+- **`id`**: 
+  - Unique identifier for an HTML element.
+  - Use `id="uniqueName"`.
+  - Example: `<div id="header">`.
+
+- **`class`**:
+  - Defines a group of elements with a shared style.
+  - Use `class="commonName"`.
+  - Example: `<div class="box">`.
+
+### CSS
+
+- **`id` Selector**:
+  - Targets a single element.
+  - Use `#idName`.
+  - Example: `#header { color: blue; }`.
+
+- **`class` Selector**:
+  - Targets multiple elements.
+  - Use `.className`.
+  - Example: `.box { margin: 10px; }`.
+
+
+
+### HTML
+
+- **Multiple `class`**:
+  - Assign multiple classes to a single element.
+  - Use a space to separate class names.
+  - Example: `<div class="class1 class2">`.
+
+### CSS
+
+- **Multiple Class Selectors**:
+  - Target elements with specific class combinations.
+  - Combine class names with a period (`.`) and no spaces.
+  - Example: `.class1.class2 { color: red; }`.
+
+- **Shared and Specific Styles**:
+  - Apply shared styles using individual class selectors.
+  - Example: 
+    ```css
+    .class1 { padding: 10px; }
+    .class2 { margin: 5px; }
+    ```
+  - Apply specific styles using combined class selectors.
+  - Example:
+    ```css
+    .class1.class2 { background-color: yellow; }
+    ```

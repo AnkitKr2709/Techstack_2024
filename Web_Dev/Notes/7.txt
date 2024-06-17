@@ -1,0 +1,82 @@
+Basic Form Structure
+
+<form>: Container for all form elements.
+action: URL to send form data.
+method: HTTP method ("GET" or "POST").
+
+Input Types
+<input type="text">: Single-line text input.
+<input type="password">: Password field, hides input.
+<input type="email">: Email input, validation included.
+<input type="number">: Numeric input, can set min/max.
+<input type="checkbox">: Checkbox input, multiple selection.
+<input type="radio">: Radio button, single selection in group.
+    Use name attribute to group radios.
+<input type="submit">: Submit form button.
+<input type="reset">: Reset form to initial state.
+
+Labels
+<label>: Associates text with a form element.
+    Use for attribute to link to an input by id.
+
+Textarea
+<textarea>: Multi-line text input.
+rows and cols set size.
+
+Dropdowns
+<select>: Creates a dropdown list.
+<option>: Individual options in dropdown.
+Use selected attribute for default selection.
+
+Buttons
+<button>: Clickable button.
+Can use type="submit" or type="reset".
+
+Fieldset and Legend
+<fieldset>: Groups related elements.
+<legend>: Caption for a <fieldset>.
+
+File Upload
+<input type="file">: Allows file selection.
+Use multiple to select multiple files.
+Hidden Input
+<input type="hidden">: Invisible input, stores data.
+Placeholder
+placeholder: Hint text inside input fields.
+Required Fields
+required: Specifies that an input must be filled out.
+Default Values
+value: Sets initial value of inputs.
+Form Attributes
+novalidate: Disables HTML5 form validation.
+autocomplete: Enables/disables autofill.
+Action and Method
+action: Where form sends data.
+method: HTTP method used for sending.
+Encoding Type
+enctype: Specifies encoding (e.g., multipart/form-data for file upload).
+HTML5 Validation
+pattern: Regular expression for input validation.
+min, max: Numeric input constraints.
+Accessibility
+Use <label> and aria- attributes for better accessibility.
+Styling Forms
+Use CSS to style form elements.
+Focus on padding, margin, and alignment.
+
+Example Form
+
+<form action="/submit" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  
+  <fieldset>
+    <legend>Preferences:</legend>
+    <label><input type="checkbox" name="subscribe"> Subscribe to newsletter</label>
+  </fieldset>
+  
+  <input type="submit" value="Submit">
+</form>
