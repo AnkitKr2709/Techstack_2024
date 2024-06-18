@@ -1,0 +1,94 @@
+CHALLENGE
+
+
+
+    Design a website using HTML only which shows these 12 files.
+    1.mp3, 2.mp3 .... 6.mp3
+    1.mp4, 2.mp4 .... 6.mp4 -->
+
+
+    
+    <h1>Raam Dhun</h1>
+    <div>
+        <audio src="shri_ram.mp3" controls autoplay loop muted></audio>
+    </div>
+    <div>
+        <audio src="shri_ram.mp3" controls autoplay loop muted></audio>
+    </div>
+    <div>
+        <audio src="shri_ram.mp3" controls autoplay loop muted></audio>
+    </div>
+    <div>
+        <audio src="shri_ram.mp3" controls autoplay loop muted></audio>
+    </div>
+    <div>
+        <audio src="shri_ram.mp3" controls autoplay loop muted></audio>
+    </div>
+    <div>
+        <audio src="shri_ram.mp3" controls autoplay loop muted></audio>
+    </div>
+  
+      
+    <h1>Ek Shloki Ramayan</h1>
+
+    <div>
+        <video
+          src="video1.mp4"
+          height="255"
+          controls
+          loop
+          muted
+          poster="image.png"
+        ></video>
+    </div>
+    <div>
+        <video
+          src="video1.mp4"
+          height="255"
+          controls
+          loop
+          muted
+          poster="image.png"
+        ></video>
+    </div>
+    <div>
+        <video
+          src="video1.mp4"
+          height="255"
+          controls
+          loop
+          muted
+          poster="image.png"
+        ></video>
+    </div>
+    <div>
+        <video
+          src="video1.mp4"
+          height="255"
+          controls
+          loop
+          muted
+          poster="image.png"
+        ></video>
+    </div>
+    <div>
+        <video
+          src="video1.mp4"
+          height="255"
+          controls
+          loop
+          muted
+          poster="image.png"
+        ></video>
+    </div>
+    <div>
+        <video
+          src="video1.mp4"
+          height="255"
+          controls
+          loop
+          muted
+          poster="image.png"
+        ></video>
+    </div>
+
