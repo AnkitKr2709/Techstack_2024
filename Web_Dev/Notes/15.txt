@@ -1,0 +1,90 @@
+Certainly! Here are notes on the three ways to add CSS to HTML:
+
+1. **Inline CSS**:
+   - **Definition**: Inline CSS involves styling individual HTML elements directly within the `style` attribute of the element.
+   - **Example**:
+     ```html
+     <h1 style="color: red; font-size: 24px;">Heading with Inline CSS</h1>
+     <p style="background-color: yellow; padding: 10px;">Paragraph with Inline CSS</p>
+     ```
+   - **Notes**: 
+     - Styles are applied directly to specific elements.
+     - Useful for quick styling adjustments or unique styling needs for individual elements.
+     - Tends to make HTML markup less maintainable and harder to update styles consistently across a site.
+
+
+
+2. **Internal CSS**:
+   - **Definition**: Internal CSS is placed within the `<style>` element in the `<head>` section of the HTML document, affecting elements within that document.
+   - **Example**:
+     ```html
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Internal CSS Example</title>
+         <style>
+             h1 {
+                 color: blue;
+                 font-size: 28px;
+             }
+             p {
+                 background-color: lightgray;
+                 padding: 10px;
+             }
+         </style>
+     </head>
+     <body>
+         <h1>Heading with Internal CSS</h1>
+         <p>Paragraph with Internal CSS</p>
+     </body>
+     </html>
+     ```
+   - **Notes**:
+     - Styles are defined within `<style>` tags in the `<head>` section.
+     - Affects all elements throughout the HTML document unless overridden by more specific styles.
+     - Provides better maintainability compared to inline CSS but may still result in styling duplication if used extensively.
+
+
+
+3. **External CSS**:
+   - **Definition**: External CSS is stored in separate `.css` files and linked to HTML documents using the `<link>` element. It allows for centralized styling across multiple HTML pages.
+   - **Example**:
+     ```html
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>External CSS Example</title>
+         <link rel="stylesheet" href="styles.css">
+     </head>
+     <body>
+         <h1>Heading with External CSS</h1>
+         <p>Paragraph with External CSS</p>
+     </body>
+     </html>
+     ```
+
+
+
+     ```css
+     /* styles.css */
+     h1 {
+         color: green;
+         font-size: 32px;
+     }
+     p {
+         background-color: lightblue;
+         padding: 15px;
+     }
+     ```
+
+     
+   - **Notes**:
+     - Styles are maintained in a separate `.css` file.
+     - Promotes better organization and reusability of styles across multiple HTML documents.
+     - Makes it easier to update styles globally by modifying the external CSS file.
+
+These three methods provide flexibility in how CSS styles can be applied to HTML documents, each with its own advantages and considerations based on the specific needs of the project.

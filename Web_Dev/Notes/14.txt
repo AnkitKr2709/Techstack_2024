@@ -1,0 +1,39 @@
+Here's a brief note on the HTML tags and CSS used in the provided code snippet:
+
+1. **`<!DOCTYPE html>`**:
+   - Specifies the HTML5 document type.
+
+2. **`<html lang="en">`**:
+   - Defines the root element of the document with English as the language.
+
+3. **`<head>`**:
+   - Contains meta-information about the HTML document and the `<style>` tag for internal CSS.
+
+4. **`<meta charset="UTF-8">`**:
+   - Specifies the character encoding for the document as UTF-8.
+
+5. **`<meta name="viewport" content="width=device-width, initial-scale=1.0">`**:
+   - Sets the viewport properties for responsive design.
+
+6. **`<title>CSS</title>`**:
+   - Sets the title of the HTML document to "CSS".
+
+7. **`<style>`**:
+   - Contains CSS rules for styling HTML elements.
+
+8. **`div, span {...}`**:
+   - Targets `<div>` and `<span>` elements and applies styles (red text on yellow background).
+
+9. **`<body>`**:
+   - Contains the visible content of the HTML document.
+
+10. **`<div>`**:
+    - Block-level element used for grouping and applying styles (red text on yellow background).
+
+11. **`<span>`**:
+    - Inline-level element styled similarly to `<div>`.
+
+12. **`<p>`**:
+    - Paragraph element containing lorem ipsum text.
+
+In summary, the HTML structure defines basic elements (`<html>`, `<head>`, `<body>`) and utilizes `<div>`, `<span>`, and `<p>` tags for content. The CSS (`<style>` block) specifies red text on a yellow background for `<div>` and `<span>` elements. This setup demonstrates basic HTML document structure and styling using internal CSS.

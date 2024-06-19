@@ -1,0 +1,48 @@
+Here's a brief note on the HTML tags used in the provided code:
+
+1. **`<!DOCTYPE html>`**:
+   - Defines the document type and version of HTML being used (HTML5 in this case).
+
+2. **`<html lang="en">`**:
+   - The root element that wraps all HTML content, indicating the document's language (English in this case).
+
+3. **`<head>`**:
+   - Contains meta-information about the HTML document, such as character set, viewport settings, and title.
+
+4. **`<meta charset="UTF-8">`**:
+   - Specifies the character encoding for the document (UTF-8, which supports a wide range of characters).
+
+5. **`<meta name="viewport" content="width=device-width, initial-scale=1.0">`**:
+   - Sets the viewport properties for responsive design, ensuring the page renders properly on various devices.
+
+6. **`<title>`**:
+   - Sets the title of the HTML document, which appears in the browser's title bar or tab.
+
+7. **`<body>`**:
+   - Contains the visible content of the HTML document.
+
+8. **`<pre>`**:
+   - Defines preformatted text where whitespace and line breaks are respected as they appear in the HTML code.
+
+9. **`<p>`**:
+   - Defines a paragraph of text.
+
+10. **`<blockquote cite="source-url">`**:
+    - Indicates a block quotation with a source URL specified in the `cite` attribute.
+
+11. **`<h1>`**:
+    - Defines the most important heading level 1.
+
+12. **`<code>`**:
+    - Defines a block of computer code.
+
+13. **`&lt;` and `&gt;`**:
+    - HTML entities used to display the less-than `<` and greater-than `>` symbols as text within the document, preventing them from being interpreted as HTML tags.
+
+14. **`&copy;`**:
+    - HTML entity for the copyright symbol ©.
+
+15. **`&nbsp;`**:
+    - HTML entity for non-breaking space, used for adding multiple spaces that do not break into a new line.
+
+These tags and entities structure and format the content within an HTML document, defining how it is displayed and interpreted by web browsers.
