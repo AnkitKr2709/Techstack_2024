@@ -1,36 +1,40 @@
+-----------------------------------------------------------------------
 
----
+About Me
 
-## About Me
+Ankit Kumar Shah
 
-### Ankit Kumar Shah
+- ID: 2020UCS0118
+- B.Tech CSE Graduate
+- Indian Institute of Technology (IIT) Jammu
 
-- **ID:** 2020UCS0118
-- **B.Tech CSE Graduate**
-- **Indian Institute of Technology (IIT) Jammu**
+---================================================================
 
----
+Profile
 
-### Profile
+Hello! I am Ankit Kumar Shah, a proud graduate from the prestigious Indian Institute of Technology, Jammu, with a Bachelor's degree in 
+Computer Science and Engineering (CSE). My academic journey has been marked by a deep passion for technology, a commitment to 
+excellence, and a continuous drive to innovate and solve complex problems.
 
-Hello! I am Ankit Kumar Shah, a proud graduate from the prestigious Indian Institute of Technology, Jammu, with a Bachelor's degree in Computer Science and Engineering (CSE). My academic journey has been marked by a deep passion for technology, a commitment to excellence, and a continuous drive to innovate and solve complex problems.
+Academic Background
 
-### Academic Background
+Bachelor of Technology (B.Tech) in Computer Science and Engineering
 
-#### Bachelor of Technology (B.Tech) in Computer Science and Engineering
+- Institution: IIT Jammu
+- Graduation Year: 2024
+- CGPA: 8.01
 
-- **Institution:** IIT Jammu
-- **Graduation Year:** 2024
-- **CGPA:** 8.01
+During my time at IIT Jammu, I immersed myself in the world of computer science, mastering subjects like algorithms, data structures,
+machine learning, artificial intelligence, and software development. My education provided me with a solid foundation in both 
+theoretical and practical aspects of technology, enabling me to approach challenges with a critical and analytical mindset.
 
-During my time at IIT Jammu, I immersed myself in the world of computer science, mastering subjects like algorithms, data structures, machine learning, artificial intelligence, and software development. My education provided me with a solid foundation in both theoretical and practical aspects of technology, enabling me to approach challenges with a critical and analytical mindset.
 
-### Technical Skills
+Technical Skills
 
-- **Programming Languages:** Python, Java, C++, JavaScript
-- **Web Development:** HTML, CSS, React, Node.js
-- **Databases:** MySQL, MongoDB
-- **Machine Learning:** TensorFlow, Scikit-Learn
-- **Tools & Platforms:** Git
-- **Operating Systems:** Windows, Linux
+- Programming Languages: Python, C++
+- Web Development: HTML, CSS, React, Node.js
+- Databases: MySQL, MongoDB
+- Machine Learning: TensorFlow, Scikit-Learn
+- Tools & Platforms: Git
+- Operating Systems: Windows, Linux
 
