@@ -26,7 +26,7 @@ double f(vector<item>& arr, int W, int n){
             W=W-arr[i].wht;
         }
         else {
-            tv+= (arr[i].val/arr[i].wht)*W;
+            tv+= (arr[i].val/(double)arr[i].wht)*(double)W;
             break;
         }
     }
@@ -39,12 +39,11 @@ int main()
     cin>>n;
     int W;
     cin>>W;
-    vector<item> arr;
+    vector<item> arr ;
     for(int i=0;i<n;i++){
         int vv, ww;
         cin>>vv>>ww;
-        arr[i].val=vv;
-        arr[i].wht=ww;
+        arr.push_back({vv,ww});
     }
     cout<<f(arr,W,n);
     return 0;
