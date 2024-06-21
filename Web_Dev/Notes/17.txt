@@ -1,0 +1,83 @@
+Here's a brief explanation of each selector used in the CSS code:
+
+### Element Selector
+```css
+div {
+    /* background-color: red; */
+}
+```
+- **Explanation**: Targets all `<div>` elements. Here, the style is commented out, so no effect is applied.
+
+### Class Selector
+```css
+.red {
+    background-color: red;
+}
+```
+- **Explanation**: Targets any element with the class `red`. The background color of these elements will be red.
+
+### ID Selector
+```css
+#green {
+    background-color: green;
+}
+```
+- **Explanation**: Targets the element with the ID `green`. The background color of this element will be green. IDs should be unique within a page.
+
+### Child Selector
+```css
+div > p {
+    color: blue;
+    background-color: brown;
+}
+```
+- **Explanation**: Targets `<p>` elements that are direct children of `<div>` elements, setting their text color to blue and background color to brown.
+
+### Descendant Selector
+```css
+div p {
+    color: blue;
+    background-color: brown;
+}
+```
+- **Explanation**: Targets all `<p>` elements inside `<div>` elements, regardless of their depth in the hierarchy, applying blue text color and brown background color.
+
+### Universal Selector
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+```
+- **Explanation**: Applies to all elements in the document, setting their margin and padding to 0.
+
+### Pseudo-Classes
+```css
+a:visited {
+    color: yellow;
+}
+
+a:link {
+    color: green;
+}
+
+a:active {
+    background-color: red;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+p:first-child {
+    background-color: aqua;
+}
+```
+- **Explanation**:
+  - `a:visited`: Styles links that have been visited with a yellow color.
+  - `a:link`: Styles links that have not been visited with a green color.
+  - `a:active`: Styles links that are being clicked with a red background.
+  - `a:hover`: Styles links when hovered over with a yellow background.
+  - `p:first-child`: Styles the first `<p>` child of any parent with an aqua background color.
+
+These selectors help you style specific elements and states in your HTML document, giving you control over their appearance based on structure and user interaction.
