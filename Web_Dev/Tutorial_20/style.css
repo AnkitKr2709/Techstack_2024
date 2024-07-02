@@ -1,0 +1,26 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+/* div > .p1 {
+    color: red;
+    background-color: yellow;
+}
+
+div > p {
+    color: rgb(250, 250, 250);
+    background-color: blue;
+} */
+
+/* not like this  */
+
+p{
+    color: rgb(250, 250, 250);
+    background-color: blue;
+}
+
+div p:first-child{
+    color: red;
+    background-color: yellow;
+}

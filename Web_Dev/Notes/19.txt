@@ -1,0 +1,525 @@
+### CSS Fonts: A Quick Overview
+
+Fonts are essential in web design as they determine the look and feel of text on a webpage. Below is a summary of key font-related CSS properties and concepts.
+
+#### Font Color
+Defines the text color.
+
+**Syntax:**
+```css
+selector {
+    color: red;
+}
+```
+
+#### Font Size
+Specifies the size of the text. Common units include:
+
+- **px** (pixels): Absolute size.
+- **em**: Relative to the parent element's font size.
+- **rem**: Relative to the root element's font size.
+- **%**: Relative to the parent element's font size.
+
+**Example:**
+```css
+#example {
+    font-size: 2em;
+}
+```
+
+#### Font Style
+Defines the style of the text. Possible values are:
+
+- **italic**: Slants the text to the right.
+- **normal**: Default style.
+- **oblique**: Similar to italic but less slanted.
+
+**Example:**
+```css
+#example {
+    font-style: italic;
+}
+```
+
+#### Font Variant
+Controls the variant of the text. Common values include:
+
+- **normal**: Default variant.
+- **small-caps**: Transforms text to small capital letters.
+
+**Example:**
+```css
+#example {
+    font-variant: small-caps;
+}
+```
+
+#### Font Weight
+Sets the thickness or boldness of the text. Values range from **100** (thin) to **900** (ultra-bold), with keywords like **bold** and **lighter**.
+
+**Example:**
+```css
+#example {
+    font-weight: 700;
+}
+```
+
+#### Font Family
+Specifies the preferred fonts for the text. Multiple fonts can be listed for fallback purposes.
+
+**Syntax:**
+```css
+selector {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+```
+
+**Example:**
+```css
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+```
+
+#### Generic Font Families
+These are fallback options for when specific fonts are unavailable:
+
+- **serif**: For fonts with small lines at the ends of characters (e.g., Times New Roman).
+- **sans-serif**: For clean, straight-edged fonts (e.g., Arial).
+- **monospace**: For fonts with fixed-width characters (e.g., Courier New).
+- **cursive**: For handwritten-style fonts.
+- **fantasy**: For decorative fonts.
+
+#### Custom Fonts
+To use custom fonts, such as from Google Fonts:
+
+1. Visit [Google Fonts](https://fonts.google.com/).
+2. Select your font.
+3. Copy the import link provided.
+4. Paste it at the top of your stylesheet.
+5. Use the font-family rule to apply the font.
+
+**Example:**
+```html
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 style="font-family: 'Roboto', sans-serif;">Hello World</h1>
+</body>
+```
+
+**Tip:** Always include a generic font family as a fallback.
+
+
+
+------------------------------------------------------------------------------------------------------------------
+
+### CSS Text Styling: Key Properties Overview
+
+Text styling in CSS helps enhance the visual appearance and readability of text on webpages. Here’s a quick guide to some important text styling properties.
+
+#### Text Decoration
+The `text-decoration` property adds or removes text decorations.
+
+**Syntax:**
+```css
+selector {
+    text-decoration: value;
+}
+```
+
+**Values:**
+- `overline`: Adds a line above the text.
+- `underline`: Adds a line below the text.
+- `line-through`: Adds a line through the text.
+- `none`: Removes any text decoration.
+
+**Example:**
+```html
+<html lang="en">
+<head>
+    <style>
+        #p1 {text-decoration: overline;}
+        #p2 {text-decoration: underline;}
+        #p3 {text-decoration: line-through;}
+        #p4 {text-decoration: overline underline;}
+    </style>
+</head>
+<body>
+    <p id="p1">text-decoration: overline</p>
+    <p id="p2">text-decoration: underline</p>
+    <p id="p3">text-decoration: line-through</p>
+    <p id="p4">text-decoration: overline underline</p>
+</body>
+</html>
+```
+
+#### Text Alignment
+The `text-align` property aligns the text within its container.
+
+**Syntax:**
+```css
+selector {
+    text-align: value;
+}
+```
+
+**Values:**
+- `left`: Aligns text to the left.
+- `center`: Aligns text to the center.
+- `right`: Aligns text to the right.
+- `justify`: Spreads text evenly between the left and right margins.
+
+**Example:**
+```html
+<html lang="en">
+<head>
+    <style>
+        #p1 {text-align: left;}
+        #p2 {text-align: right;}
+        #p3 {text-align: center;}
+        #p4 {text-align: justify;}
+    </style>
+</head>
+<body>
+    <p id="p1">text-align: left</p>
+    <p id="p2">text-align: right</p>
+    <p id="p3">text-align: center</p>
+    <p id="p4">text-align: justify</p>
+</body>
+</html>
+```
+
+#### Text Transformation
+The `text-transform` property changes the text case.
+
+**Syntax:**
+```css
+selector {
+    text-transform: value;
+}
+```
+
+**Values:**
+- `uppercase`: Transforms text to uppercase.
+- `lowercase`: Transforms text to lowercase.
+- `capitalize`: Capitalizes the first letter of each word.
+- `none`: No transformation.
+
+**Example:**
+```html
+<html lang="en">
+<head>
+    <style>
+        #p1 {text-transform: uppercase;}
+        #p2 {text-transform: lowercase;}
+        #p3 {text-transform: capitalize;}
+        #p4 {text-transform: none;}
+    </style>
+</head>
+<body>
+    <p id="p1">text-transform: uppercase</p>
+    <p id="p2">text-transform: lowercase</p>
+    <p id="p3">text-transform: capitalize</p>
+    <p id="p4">text-transform: none</p>
+</body>
+</html>
+```
+
+#### Letter Spacing
+The `letter-spacing` property sets the space between characters.
+
+**Values:** Typically specified in `px`, `em`, `rem`, or `%`.
+
+**Example:**
+```html
+<html lang="en">
+<head>
+    <style>
+        h1 {
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CodeWithHarry</h1>
+</body>
+</html>
+```
+
+#### Line Height
+The `line-height` property controls the vertical spacing between lines of text.
+
+**Example:**
+```html
+<html lang="en">
+<head>
+    <style>
+        h1 {
+            line-height: 3.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>CodeWithHarry</h1>
+    <h1>Developer and CodeWithHarry.com founder</h1>
+</body>
+</html>
+```
+A value of `3.5` means the space between lines is 3.5 times the height of the font size.
+
+#### Text Shadow
+The `text-shadow` property adds shadows to text.
+
+**Syntax:**
+```css
+selector {
+    text-shadow: horizontal-offset vertical-offset blur-radius color;
+}
+```
+
+**Example:**
+```html
+<html lang="en">
+<head>
+    <style>
+        h1 {
+            text-shadow: 2px 3px 4px red;
+        }
+    </style>
+</head>
+<body>
+    <h1>CodeWithHarry</h1>
+</body>
+</html>
+```
+
+#### Text Overflow
+The `text-overflow` property manages how text that overflows its container is displayed.
+
+**Values:**
+- `ellipsis`: Truncates overflowing text with an ellipsis (`...`).
+- `clip`: Clips the text without any visual indication.
+
+**Example:**
+```html
+<p style="width: 100px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+    This is a long text that will be truncated.
+</p>
+```
+
+**Tip:** Ensure the container has a defined width or overflow control to effectively use `text-overflow`.
+
+---
+
+These properties are crucial for managing how text is displayed on your web pages, enhancing readability, and improving visual aesthetics.
+
+
+-------------------------------------------------------------------------------------------
+
+### CSS Colors: A Simplified Guide
+
+CSS provides various ways to set the color of HTML elements. Colors can be used for text, borders, and other visual elements. Below are some common methods for setting colors in CSS.
+
+#### Basic Color Property
+
+**Syntax:**
+```css
+selector {
+    color: value;
+}
+```
+
+**Example:**
+```html
+<head>
+    <style>
+        p {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello World</p>
+    <p>CodeWithHarry</p>
+</body>
+</html>
+```
+
+#### Hexadecimal Notation
+
+Hexadecimal color codes use a `#` followed by six characters (RRGGBB) to represent red, green, and blue intensities.
+
+**Syntax:**
+```css
+selector {
+    color: #RRGGBB;
+}
+```
+
+**Example:**
+```html
+<head>
+    <style>
+        h1 {
+            color: #FF0000; /* Red */
+        }
+        h2 {
+            color: #00FF00; /* Green */
+        }
+        h3 {
+            color: #0000FF; /* Blue */
+        }
+        h4 {
+            color: #b700ff; /* Custom color */
+        }
+    </style>
+</head>
+<body>
+    <h1>CodeWithHarry</h1>
+    <h2>A Developer</h2>
+    <h3>Founder CodeWithHarry.com</h3>
+    <h4>Hello World</h4>
+</body>
+</html>
+```
+
+#### RGB (Red, Green, Blue)
+
+The `rgb()` function specifies color using the red, green, and blue components.
+
+**Syntax:**
+```css
+selector {
+    color: rgb(red, green, blue);
+}
+```
+
+**Example:**
+```html
+<head>
+    <style>
+        h1 {
+            color: rgb(0, 0, 0); /* Black */
+        }
+        h2 {
+            color: rgb(255, 255, 255); /* White */
+        }
+        h3 {
+            color: rgb(30, 150, 220); /* Custom color */
+        }
+    </style>
+</head>
+<body>
+    <h1>CodeWithHarry</h1>
+    <h2>A Developer</h2>
+    <h3>CodeWithHarry.com founder</h3>
+</body>
+</html>
+```
+
+#### RGBA (Red, Green, Blue, Alpha)
+
+The `rgba()` function adds an alpha value for transparency.
+
+**Syntax:**
+```css
+selector {
+    color: rgba(red, green, blue, alpha);
+}
+```
+
+**Example:**
+```html
+<head>
+    <style>
+        h1 {
+            color: rgba(0, 0, 0, 0.8); /* 80% opacity black */
+        }
+        h2 {
+            color: rgba(255, 255, 255, 0.6); /* 60% opacity white */
+        }
+        h3 {
+            color: rgba(30, 150, 220, 0.6); /* 60% opacity custom color */
+        }
+    </style>
+</head>
+<body>
+    <h1>CodeWithHarry</h1>
+    <h2>A Developer</h2>
+    <h3>CodeWithHarry.com founder</h3>
+</body>
+</html>
+```
+
+#### HSL (Hue, Saturation, Lightness)
+
+The `hsl()` function specifies color based on hue, saturation, and lightness.
+
+**Syntax:**
+```css
+selector {
+    color: hsl(hue, saturation, lightness);
+}
+```
+
+**Example:**
+```html
+<head>
+    <style>
+        h1 {
+            color: hsl(235, 100%, 50%); /* Bright blue */
+        }
+        p {
+            color: hsl(0, 0%, 0%); /* Black */
+        }
+    </style>
+</head>
+<body>
+    <h1>CodeWithHarry</h1>
+    <p>A Developer</p>
+</body>
+</html>
+```
+
+#### HSLA (Hue, Saturation, Lightness, Alpha)
+
+The `hsla()` function adds an alpha value for transparency.
+
+**Syntax:**
+```css
+selector {
+    color: hsla(hue, saturation, lightness, alpha);
+}
+```
+
+**Example:**
+```html
+<head>
+    <style>
+        h1 {
+            color: hsla(235, 100%, 50%, 0.7); /* 70% opacity bright blue */
+        }
+        p {
+            color: hsla(0, 0%, 0%, 0.4); /* 40% opacity black */
+        }
+    </style>
+</head>
+<body>
+    <h1>CodeWithHarry</h1>
+    <p>A Developer</p>
+</body>
+</html>
+```
+
+### Summary
+
+- **Basic Color**: Simple color names like `red`, `blue`, `green`.
+- **Hexadecimal**: `#RRGGBB`, precise control over color.
+- **RGB**: `rgb(red, green, blue)`, each value from 0 to 255.
+- **RGBA**: `rgba(red, green, blue, alpha)`, includes opacity.
+- **HSL**: `hsl(hue, saturation, lightness)`, intuitive color adjustments.
+- **HSLA**: `hsla(hue, saturation, lightness, alpha)`, includes opacity.
+
+These methods provide flexibility and control over how colors are applied to your HTML elements.
