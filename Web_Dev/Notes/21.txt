@@ -1,0 +1,128 @@
+CSS specificity is crucial in determining which style rules are applied to HTML elements when multiple rules overlap or conflict. Specificity assigns a value or weight to each CSS selector, and the selector with the highest specificity value takes precedence. Here's a simplified guide to understanding CSS specificity:
+
+## CSS Specificity
+
+CSS specificity helps decide which style will be applied to an HTML element when there are multiple, conflicting CSS rules. It assigns a weight to each CSS selector; the higher the specificity, the more precedence the selector has.
+
+### Example
+
+Consider the following HTML and CSS code:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * { color: gray; }        /* Universal selector */
+        #title { color: red; }    /* ID selector */
+        .h1 { color: blue; }      /* Class selector */
+        h1 { color: pink; }       /* Element selector */
+    </style>
+</head>
+<body>
+    <h1 id="title" class="h1" style="color:purple">CodeWithHarry</h1>
+</body>
+</html>
+```
+
+**Question:** What color will be assigned to the `<h1>` element?  
+**Answer:** The `<h1>` element will be purple due to the inline style, which has the highest specificity.
+
+## The Cascade Algorithm
+
+CSS stands for Cascading Style Sheets. The cascade algorithm resolves conflicts where multiple CSS rules apply to an element. The cascade has four main stages:
+
+1. **Position and Order of Appearance:** The order in which CSS rules appear matters. The last declared rule will be applied if selectors have the same specificity.
+2. **Specificity:** This algorithm calculates which CSS selector has the highest specificity.
+3. **Origin:** The order of CSS rules from different sources, like browser styles, CSS from extensions, or your own CSS, affects precedence.
+4. **Importance:** Some CSS rules are more heavily weighted than others, especially those with the `!important` declaration.
+
+### Position and Order of Appearance
+
+When two rules have identical specificity, the one declared last will be applied. Styles from inline attributes will override other styles, regardless of their position, unless a declaration is marked as `!important`.
+
+**Example:** 
+```html
+<!-- The color will be purple due to the inline style -->
+<h1 style="color:purple">CodeWithHarry</h1>
+```
+
+### Specificity
+
+CSS specificity is calculated based on a point system:
+
+- **Inline Styles**: Highest specificity and always override other styles.
+- **ID Selectors**: High specificity, only overridden by inline styles.
+- **Class and Attribute Selectors**: Moderate specificity.
+- **Element Selectors**: Low specificity.
+- **Universal Selector**: Lowest specificity.
+
+**Order of Specificity:**
+- Inline Style > ID Selector > Class/Attribute Selector > Element Selector > Universal Selector
+
+### Specificity Calculation
+
+1. **Universal Selector (`*`)**: 0 points
+2. **Element Selector and Pseudo-elements**: 1 point each
+3. **Class Selectors, Attribute Selectors, and Pseudo-classes**: 10 points each
+4. **ID Selectors**: 100 points
+5. **Inline Styles**: 1000 points
+
+**Example:**
+```html
+<h1 id="title" class="h1">CodeWithHarry</h1>
+```
+- Specificity value: `111` (ID: 100, Class: 10, Element: 1)
+
+**Effect of Specificity:**
+
+```html
+<style>
+    * { color: gray; }
+    #title { color: red; }
+    .h1 { color: blue; }
+    h1 { color: pink; }
+</style>
+<!-- The color will be red due to the ID selector -->
+<h1 id="title" class="h1">CodeWithHarry</h1>
+```
+
+### Importance
+
+The `!important` flag overrides all other styles, regardless of specificity. It should be used sparingly to avoid making the stylesheet difficult to maintain.
+
+**Example:**
+```css
+p {
+    color: red !important;
+}
+
+p {
+    color: blue;
+}
+```
+The paragraph text will be red because `!important` takes precedence.
+
+## Quick Quiz
+
+**Question:** What is the specificity value of the selector:
+```css
+a.harryclass.rohan-class[href]:hover {
+  color: red;
+}
+```
+**Answer:**  
+- Element selector `a`: 1 point
+- Class selectors `.harryclass` and `.rohan-class`: 10 points each, totaling 20 points
+- Attribute selector `[href]`: 10 points
+- Pseudo-class `:hover`: 10 points
+
+**Total Specificity:** `1 (element) + 20 (classes) + 10 (attribute) + 10 (pseudo-class) = 41`
+
+The specificity value is `41`.
+
+**Remember:** In case of a tie, the rule declared last is applied.
+
+---
+
+By understanding these principles, you can effectively manage and resolve CSS conflicts to achieve the desired styling for your web pages.

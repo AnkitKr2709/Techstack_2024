@@ -1,0 +1,213 @@
+The `display` property in CSS is fundamental for defining how elements are laid out on a web page. It determines the rendering behavior of elements, including how they are arranged in relation to each other and how they take up space in the layout. Here's a guide to some common values of the `display` property and their effects.
+
+### CSS `display` Property
+
+#### `display: inline;`
+
+Elements with `display: inline;` take up only as much width as necessary for their content, without forcing a line break. They can be placed next to each other horizontally, but you can't set their width or height, and they only take padding and margin on the left and right, not on the top and bottom.
+
+**Example:**
+```css
+span {
+    display: inline;
+    color: blue;
+}
+```
+
+```html
+<p>This is a <span>blue</span> text example.</p>
+```
+
+**Key Points:**
+- Does not start on a new line.
+- Width and height properties are ignored.
+- Only horizontal padding and margin are applied.
+
+#### `display: block;`
+
+Elements with `display: block;` take up the full available width and start on a new line. This is typical for elements like `<div>`, `<p>`, and `<h1>`. You can set their width and height, and they respect all padding and margin settings.
+
+**Example:**
+```css
+div {
+    display: block;
+    width: 100%;
+    background-color: lightgray;
+}
+```
+
+```html
+<div>This is a block-level element.</div>
+```
+
+**Key Points:**
+- Starts on a new line.
+- Takes up the full width available.
+- Width, height, padding, and margin can all be set.
+
+#### `display: inline-block;`
+
+Elements with `display: inline-block;` combine the characteristics of `inline` and `block`. They sit inline with other elements, but you can set their width and height, and they respect all padding and margin settings.
+
+**Example:**
+```css
+span {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: yellow;
+}
+```
+
+```html
+<p>This is a <span>yellow block</span> in a line of text.</p>
+```
+
+**Key Points:**
+- Does not start on a new line.
+- Width, height, padding, and margin can be set.
+- Elements can sit next to each other.
+
+#### `display: none;`
+
+Elements with `display: none;` are completely removed from the document flow. They take up no space and are not visible. This is different from visibility: hidden, where the element is invisible but still occupies space.
+
+**Example:**
+```css
+p {
+    display: none;
+}
+```
+
+```html
+<p>This paragraph is hidden and takes no space.</p>
+```
+
+**Key Points:**
+- Element is removed from the document flow.
+- Takes up no space and is not visible.
+
+#### `display: flex;`
+
+Elements with `display: flex;` enable a flexible layout model for arranging items within a container. It allows for responsive design with the distribution of space along a flexbox's main and cross axes.
+
+**Example:**
+```css
+div {
+    display: flex;
+    justify-content: space-between;
+}
+```
+
+```html
+<div>
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+</div>
+```
+
+**Key Points:**
+- Allows flexible and responsive layouts.
+- Aligns items along main and cross axes.
+
+#### `display: grid;`
+
+Elements with `display: grid;` create a grid container that allows for precise control over the placement and alignment of child elements within rows and columns.
+
+**Example:**
+```css
+div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+```
+
+```html
+<div>
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+</div>
+```
+
+**Key Points:**
+- Defines a grid layout with rows and columns.
+- Allows for precise control over element placement.
+
+### Common `display` Values Overview
+
+| Value           | Description                                                    |
+|-----------------|----------------------------------------------------------------|
+| `inline`        | No line break; width and height cannot be set.                 |
+| `block`         | Starts on a new line; full width; width and height can be set. |
+| `inline-block`  | No line break; width and height can be set.                    |
+| `none`          | Element is removed from document flow and not visible.        |
+| `flex`          | Creates a flexible layout container for arranging child items.|
+| `grid`          | Creates a grid container for arranging child items in rows and columns.|
+
+### Example Code for Display Properties
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .inline-example {
+            display: inline;
+            color: blue;
+        }
+        .block-example {
+            display: block;
+            width: 100%;
+            background-color: lightgray;
+        }
+        .inline-block-example {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            background-color: yellow;
+        }
+        .none-example {
+            display: none;
+        }
+        .flex-example {
+            display: flex;
+            justify-content: space-around;
+        }
+        .grid-example {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p class="inline-example">Inline element</p>
+    <div class="block-example">Block element</div>
+    <span class="inline-block-example">Inline-block element</span>
+    <p class="none-example">This element is hidden</p>
+    <div class="flex-example">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+    <div class="grid-example">
+        <div>Grid Item 1</div>
+        <div>Grid Item 2</div>
+        <div>Grid Item 3</div>
+    </div>
+</body>
+</html>
+```
+
+**Output:**
+
+- The inline element appears in the line of text.
+- The block element spans the full width of its parent and starts on a new line.
+- The inline-block element appears in the line of text but with defined dimensions.
+- The hidden element is not displayed.
+- The flex container arranges its child items with space around them.
+- The grid container arranges its child items in a 3-column layout with a gap.
+
+By mastering the `display` property, you can control the layout and visibility of elements effectively, creating complex and responsive web designs with ease.
